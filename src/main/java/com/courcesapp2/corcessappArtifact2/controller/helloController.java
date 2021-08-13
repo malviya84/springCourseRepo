@@ -38,7 +38,7 @@ public class helloController {
     {
         return this.service.getCourse(Long.parseLong(courseId));
     }
-
+// TO get all courses
     @PostMapping(path="/course",consumes = "application/json")
     public Course addCourse(@RequestBody Course course)
     {
